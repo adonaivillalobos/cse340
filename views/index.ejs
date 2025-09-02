@@ -1,57 +1,51 @@
-<%- include('partials/header') %>
-
-<main>
-  <h1>Welcome to CSE Motors!</h1>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h2><span class="highlight">DMC Delorean</span></h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | CSE Motors</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to CSE Motors</h1>
+    <nav>
       <ul>
-        <li>3 Cup holders</li>
-        <li>Superman doors</li>
-        <li>Fuzzy dice!</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/inv">Inventory</a></li>
+        <li><a href="/account/login">Login</a></li>
       </ul>
-      <button class="btn-primary">Own Today</button>
-    </div>
-    <div class="hero-image">
-      <img src="public//images/vehicles/delorean.jpg" alt="DMC Delorean">
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <section class="features">
-    <div class="upgrades">
-      <h3>Delorean Upgrades</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="public/images/upgrades/flux-cap.jpg" alt="Flux Capacitor">
-          <a href="#">Flux Capacitor</a>
-        </div>
-        <div class="card">
-          <img src="public/images/upgrades/flame.jpg" alt="Flame Decals">
-          <a href="#">Flame Decals</a>
-        </div>
-        <div class="card">
-          <img src="public/images/upgrades/bumper-sticker.jpg" alt="Bumper Stickers">
-          <a href="#">Bumper Stickers</a>
-        </div>
-        <div class="card">
-          <img src="public/images/upgrades/hub-cap.jpg" alt="Hub Caps">
-          <a href="#">Hub Caps</a>
-        </div>
-      </div>
-    </div>
+  <main>
+    <section class="hero">
+      <h2>The Delorean</h2>
+      <img src="/images/vehicles/delorean.jpg" alt="Delorean car">
+      <p>Explore the future of driving with the legendary Delorean.</p>
+    </section>
 
-    <div class="reviews">
-      <h3>DMC Delorean Reviews</h3>
+    <section class="upgrades">
+      <h2>Upgrades</h2>
       <ul>
-        <li>"So fast it’s almost like traveling in time." (4/5)</li>
-        <li>"Coolest ride on the road." (4/5)</li>
-        <li>"I’m feeling McFly!" (5/5)</li>
-        <li>"The most futuristic ride of our day." (4.5/5)</li>
-        <li>"80’s livin and I love it!" (5/5)</li>
+        <li>
+          <img src="/images/upgrades/flux-cap.png" alt="Flux Capacitor">
+          <p>Flux Capacitor</p>
+        </li>
+        <li>
+          <img src="/images/upgrades/flame.jpg" alt="Flame Decals">
+          <p>Flame Decals</p>
+        </li>
+        <li>
+          <img src="/images/upgrades/bumper_sticker.jpg" alt="Bumper Sticker">
+          <p>Bumper Sticker</p>
+        </li>
       </ul>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 
-<%- include('partials/footer') %>
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> CSE Motors. All rights reserved.</p>
+  </footer>
+</body>
+</html>
