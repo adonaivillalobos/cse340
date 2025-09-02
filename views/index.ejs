@@ -3,55 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | CSE Motors</title>
+  <title>CSE Motors</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to CSE Motors</h1>
     <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/custom">Custom</a></li>
-        <li><a href="/sedan/">Sedan</a></li>
-        <li><a href="/suv/">SUV</a></li>
-        <li><a href="/truck/">Truck</a></li>
-      </ul>
+      <a href="/">Home</a>
+      <a href="/custom">Custom</a>
+      <a href="/sedan/">Sedan</a>
+      <a href="/suv/">SUV</a>
+      <a href="/truck/">Truck</a>
     </nav>
+    <h1>Welcome to CSE Motors!</h1>
   </header>
 
   <main>
-    <section class="hero">
-      <h2>The Delorean</h2>
-      <img src="/images/vehicles/delorean.jpg" alt="Delorean car">
-      <p>Explore the future of driving with the legendary Delorean.</p>
+    <section class="delorean-section">
+      <h2>DMC Delorean</h2>
+      <p>3 Cup holders</p>
+      <p>Superman doors</p>
+      <p>Fuzzy dice!</p>
+      
+      <h3>Own Today</h3>
     </section>
-
-    <section class="upgrades">
-      <h2>Upgrades</h2>
+    
+    <hr>
+    
+    <section class="upgrades-section">
+      <div class="upgrade-column">
+        <h2>Delorean Upgrades</h2>
+        <ul>
+          <li>Flux Capacitor</li>
+          <li>Flame Decals</li>
+        </ul>
+      </div>
+      
+      <div class="upgrade-column">
+        <ul>
+          <li>Bumper Stickers</li>
+          <li>Hub Caps</li>
+        </ul>
+      </div>
+    </section>
+    
+    <hr>
+    
+    <section class="reviews-section">
+      <h2>DMC Delorean Reviews</h2>
       <ul>
-        <li>
-          <img src="/images/upgrades/flux-cap.png" alt="Flux Capacitor">
-          <p>Flux Capacitor</p>
-        </li>
-        <li>
-          <img src="/images/upgrades/flame.jpg" alt="Flame Decals">
-          <p>Flame Decals</p>
-        </li>
-        <li>
-          <img src="/images/upgrades/bumper_sticker.jpg" alt="Bumper Sticker">
-          <p>Bumper Sticker</p>
-        </li>
-        <li>
-          <img src="/images/upgrades/hub-cap.jpg" alt="Hub Cap">
-          <p>Hub Caps</p>
-        </li>
+        <li>"So fast it's almost like traveling in time." (4/5)</li>
+        <li>"Coolest ride on the road." (4/5)</li>
+        <li>"I'm feeling McFly!" (5/5)</li>
+        <li>"The most futuristic ride of our day." (4.5/5)</li>
+        <li>"80's livin and I love it!" (5/5)</li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <%= new Date().getFullYear() %> CSE Motors. All rights reserved.</p>
+    <p>&copy; 2023 CSE Motors</p>
   </footer>
 </body>
 </html>
