@@ -9,14 +9,14 @@
   padding: 0;
 }
 
-/* Body with checkerboard background */
+/* Body with checkerboard border */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: repeating-conic-gradient(#000 0% 25%, #fff 0% 50%) 50% / 60px 60px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 30px;
   color: #333;
 }
 
@@ -26,6 +26,7 @@ main {
   max-width: 900px;
   width: 100%;
   border: 3px solid #00aaff;
+  border-radius: 10px;
   padding: 20px;
 }
 
@@ -34,7 +35,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 header h1 {
@@ -47,7 +48,7 @@ header nav ul {
   display: flex;
   list-style: none;
   background: #222;
-  padding: 10px;
+  padding: 10px 20px;
   justify-content: center;
   gap: 30px;
 }
@@ -81,7 +82,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 40px;
 }
 
 .hero-text {
@@ -105,8 +106,8 @@ h1 {
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
   margin-top: 10px;
+  border-radius: 0; /* square corners like screenshot */
 }
 
 /* Delorean image */
@@ -121,10 +122,6 @@ h1 {
   margin-top: 30px;
 }
 
-.upgrades-section, .reviews-section {
-  width: 48%;
-}
-
 /* Upgrades */
 .upgrades-section {
   display: grid;
@@ -132,14 +129,10 @@ h1 {
   gap: 15px;
 }
 
-.upgrades-section a {
-  display: block;
-  text-align: center;
+.upgrades-section div {
   background: #00aaff;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+  text-align: center;
   border-radius: 4px;
 }
 
@@ -149,6 +142,13 @@ h1 {
   max-width: 80px;
 }
 
+.upgrades-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Reviews */
 .reviews-section ul {
   list-style: none;
@@ -156,6 +156,7 @@ h1 {
 
 .reviews-section li {
   margin-bottom: 15px;
+  font-style: italic;
 }
 
 /* Footer */
