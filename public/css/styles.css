@@ -100,7 +100,7 @@ h1 {
 }
 
 .hero img {
-  width: 75%;
+  width: 75%;      /* slightly smaller */
   max-width: 550px;
   height: auto;
   display: block;
@@ -167,11 +167,17 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #00aaff;  /* blue box */
+  background: #00aaff;   /* solid blue background */
   padding: 10px;
-  border-radius: 4px;
-  height: 150px;   /* equal height boxes */
+  border: 1px solid #000; /* thin black border */
+  height: 150px;          /* uniform height */
+  color: blue;            /* link-like text */
   text-decoration: none;
+  font-weight: normal;    /* not bold */
+}
+
+.upgrades-grid a:hover {
+  text-decoration: underline;
 }
 
 .upgrades-grid img {
@@ -179,16 +185,6 @@ h1 {
   height: 80px;
   object-fit: contain;
   margin-bottom: 8px;
-}
-
-/* Upgrade link text styled like normal link */
-.upgrades-grid a {
-  color: blue; /* link look */
-  font-weight: normal;
-}
-
-.upgrades-grid a:hover {
-  text-decoration: underline;
 }
 
 /* Reviews */
