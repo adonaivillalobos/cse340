@@ -1,4 +1,4 @@
-/******* Change Box Model ***************/
+/******* Reset & Box Model ***************/
 *,
 *:before,
 *:after {
@@ -32,13 +32,28 @@ main {
 /* Header */
 header {
   margin-bottom: 15px;
+  text-align: center;
+  position: relative;
 }
 
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
-  text-align: center;
   margin-bottom: 10px;
+}
+
+/* My Account in header top-right */
+header .account {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .account a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 /* Nav bar under title and full width */
@@ -46,35 +61,23 @@ header nav ul {
   display: flex;
   list-style: none;
   background: #222;
-  padding: 10px;
+  padding: 10px 0;
   justify-content: center;
-  gap: 30px;
   width: 100%;
 }
 
 header nav ul li {
-  flex: 1;
-  text-align: center;
+  margin: 0 20px;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  display: block;
-  width: 100%;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
-}
-
-/* My Account (floated to right if needed) */
-header .account a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.9rem;
-  font-weight: bold;
 }
 
 /* Welcome Section */
@@ -88,35 +91,31 @@ h1 {
 .hero {
   position: relative;
   margin: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .hero img {
   width: 100%;
   height: auto;
-  opacity: 0.3; /* faint in background */
+  display: block;
 }
 
 .hero-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
-  color: #000;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  border-radius: 8px;
+  top: 20%;
+  left: 10%;
+  max-width: 40%;
+  color: #00aaff;
 }
 
 .hero-text h2 {
-  color: #00aaff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .hero-text p {
   margin: 5px 0;
+  color: #333;
 }
 
 .hero-text .btn {
@@ -167,11 +166,15 @@ h1 {
 .upgrades-section img {
   width: 100px;
   height: 100px;
-  object-fit: contain; /* keeps aspect ratio inside box */
-  margin-bottom: 10px;
+  object-fit: contain;
+  margin-bottom: 5px;
 }
 
 /* Reviews */
+.reviews-section h2 {
+  margin-bottom: 10px;
+}
+
 .reviews-section ul {
   list-style: none;
 }
