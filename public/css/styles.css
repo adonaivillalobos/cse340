@@ -171,7 +171,7 @@ h1 {
   padding: 10px;
   border: 1px solid #000; /* thin black border */
   height: 150px;          /* uniform height */
-  color: blue;            /* link-like text */
+  color: #fff;            /* contrast text */
   text-decoration: none;
   font-weight: normal;    /* not bold */
 }
@@ -207,4 +207,26 @@ footer {
   padding-top: 10px;
   font-size: 0.8rem;
   color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+  }
+  .upgrades-section,
+  .reviews-section {
+    width: 100%;
+  }
+  .hero-text {
+    position: static;
+    max-width: 100%;
+    color: #00aaff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
